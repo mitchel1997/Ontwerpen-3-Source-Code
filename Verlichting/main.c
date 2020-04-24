@@ -11,7 +11,7 @@
 #define BOUND 2000
 #define UPPER 300
 #define BUFFER_SIZE 255
-#define POT_SIZE 10
+#define POT_SIZE 100
 
 uint8_t  pipe[5] = "CLOCK";
 uint8_t  pipe1[5] = "LAMP";
