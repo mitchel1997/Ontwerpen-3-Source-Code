@@ -310,10 +310,10 @@ ISR(PORTF_INT0_vect)
 /*! Brief Re-maps a number from one range to another
 *
 * \Param x				the number to map
-* \Param in_min			the lower bound of the value’s current range
-* \Param in_max			the upper bound of the value’s current range
-* \Param out_min		the lower bound of the value’s target range
-* \param out_max		the upper bound of the value’s target range
+* \Param in_min			the lower bound of the valueâ€™s current range
+* \Param in_max			the upper bound of the valueâ€™s current range
+* \Param out_min		the lower bound of the valueâ€™s target range
+* \param out_max		the upper bound of the valueâ€™s target range
 *
 * \return				mapped value
 *
@@ -329,243 +329,17 @@ void deuntje(int f)
 	ucg_SetPrintPos(&ucg, px, py);
 	ucg_Print(&ucg,	"%.2d : %.2d", h, m);
 	
-	f = 27303;
-	geluid(f);
-	_delay_ms(70);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(70);
+	int lengte = 40;
 	
-	f = 27303;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);	 
-	
-	f = 13628;
-	geluid(f);
-	_delay_ms(124);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(124);	
-	
-	f = 18181;
-	geluid(f);
-	_delay_ms(184);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(184);
-	
-	f = 19276;
-	geluid(f);
-	_delay_ms(128);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(128);
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(121);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(121);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(125);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(125);
-	
-	f = 27303;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(64);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(64);
-
-	f = 30650;
-	geluid(f);
-	_delay_ms(70);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(70);
-	
-	f = 30650;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 13628;
-	geluid(f);
-	_delay_ms(124);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(124);
-	
-	f = 18181;
-	geluid(f);
-	_delay_ms(184);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(184);
-	
-	f = 19276;
-	geluid(f);
-	_delay_ms(128);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(128);
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(121);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(121);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(125);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(125);
-	
-	f = 27303;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(64);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(64);
-
-	f = 32519;
-	geluid(f);
-	_delay_ms(70);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(70);
-	
-	f = 32519;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 13628;
-	geluid(f);
-	_delay_ms(124);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(124);
-	
-	f = 18181;
-	geluid(f);
-	_delay_ms(184);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(184);
-	
-	f = 19276;
-	geluid(f);
-	_delay_ms(128);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(128);
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(121);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(121);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(125);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(125);
-	
-	f = 27303;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);	
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(64);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(64);
-	
-	f = 34333;
-	geluid(f);
-	_delay_ms(70);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(70);
-	
-	f = 34333;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 13628;
-	geluid(f);
-	_delay_ms(124);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(124);
-	
-	f = 18181;
-	geluid(f);
-	_delay_ms(184);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(184);
-	
-	f = 19276;
-	geluid(f);
-	_delay_ms(128);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(128);
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(121);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(121);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(125);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(125);
-	
-	f = 27303;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 22921;
-	geluid(f);
-	_delay_ms(61);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(61);
-	
-	f = 20407;
-	geluid(f);
-	_delay_ms(64);
-	TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
-	_delay_ms(64);
+	f[lengte] = {27303, 27303, 13628, 18181, 19276, 20407, 22921, 27303, 22921, 20407, 30650, 30650, 13628, 18181, 19276, 20407, 22921, 27303, 22921, 20407, 
+			32519, 32519, 13628, 18181, 19276, 20407, 22921, 27303, 22921, 20407, 34333, 34333, 13628, 18181, 19276, 20407, 22921, 27303, 22921, 20407};
+	int delay[lengte] = {70, 61, 124, 184, 128, 121, 125, 61, 61, 64, 70, 61, 124, 184, 128, 121, 125, 61, 61, 64, 
+					70, 61, 124, 184, 128, 121, 125, 61, 61, 64, 70, 61, 124, 184, 128, 121, 125, 61, 61, 64};
+	for (int i = 0; i < lengte; i++)
+	{
+		geluid(f[i]);
+		_delay_ms(delay[i]);
+		TCD0.INTCTRLA  = TC_OVFINTLVL_OFF_gc;
+		_delay_ms(delay[i]);
+	}
 }
